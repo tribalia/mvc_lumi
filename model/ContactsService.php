@@ -6,9 +6,9 @@ class contactsService {
     public $conn;
     
     public function openDb(){
-     //mysql_connect('localhost','root','Dancacovean@gmail.com2019');
+     //mysql_connect('localhost','root','xxxxxxxx');
      //mysql_select_db('contacts');
-    $this->conn = mysqli_connect("localhost","root","Dancacovean@gmail.com2019","contacts");
+    $this->conn = mysqli_connect("localhost","root","xxxxxxxx","contacts");
  }
     
     
