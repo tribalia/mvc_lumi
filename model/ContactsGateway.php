@@ -2,13 +2,12 @@
 
 Class ContactsGateway{
     
-  public function selectAll(){
-      
-      $dbres=mysql_query("SELECT * FROM contacts");
-      
+  public function selectAll($conn){
+      $sql = "SELECT * FROM contacts";
+      $result = mysqli_query($conn, $sql);
       $contacts = array();
       
-      while ( ($obj = mysql_fetch_object($dbres)) !=  null){
+      while ( ($obj = mysqli_fetch_object($result)) !=  null){
           
           $contacts[]=$obj;
           
